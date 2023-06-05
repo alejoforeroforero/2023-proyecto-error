@@ -1,0 +1,11 @@
+.cuadrado {
+    cursor: pointer;
+}
+
+img {
+    width: 150%;
+}
+
+img:hover {
+    transform: scale(2);
+}

@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-general {
+  margin-top: 40px;
+}
+
+.cerrar {
+  text-align: right;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.cerrar:hover {
+  color: #fa9c6d;
+}
+
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+}
