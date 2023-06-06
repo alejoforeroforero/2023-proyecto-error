@@ -26,7 +26,9 @@ function escogerSeccion() {
 
   if (nombrePagina === "#home") {
     pintarHome(contenedorGeneral);
-  } else if (nombrePagina === "#intervenciones") {
+  } else if (nombrePagina === "#frames") {
+    pintarFrames(contenedorGeneral);
+  }else if (nombrePagina === "#intervenciones") {
     pintarIntervenciones(contenedorGeneral);
   } else if (nombrePagina === "#reflexiones") {
     pintarReflexiones(contenedorGeneral);

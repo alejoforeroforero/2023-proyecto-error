@@ -23,3 +23,26 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.frames-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+
+.categoria-img-contenedor{
+  width:23%;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px 0.5%;
+  border-radius: 20px;
+  border: 1px solid #b6b6b6;
+}
+
+.categoria-img-contenedor img{
+ height: 100%;
+}
+
+.categoria-img-contenedor video{
+  height: 100%;
+}

@@ -2,15 +2,15 @@ class Cuadrado {
   contenedor;
   posX;
   posY;
-  vel = Math.floor(Math.random() * (1200 - 800) + 1200);
+  vel = Math.floor(Math.random() * (200 - 100) + 70);
   contador = 0;
-  tope = Math.floor(Math.random() * (100 - 40) + 40);
+  tope = Math.floor(Math.random() * (100 - 40) + 80);
   area;
   ancho;
   alto;
   anchoMax = 70;
-  anchoMin1 = 65;
-  anchoMin2 = 47;
+  anchoMin1 = 64;
+  anchoMin2 = 64;
   img;
   imgId;
   imgWidth = 150;
@@ -24,7 +24,7 @@ class Cuadrado {
     this.contenedor.className = "cuadrado";
 
     this.img = cE("img", this.contenedor);
-    this.img.src = `2-imgs/${this.imgId}.jpg`;
+    this.img.src = `2-imgs/home/${this.imgId}.jpg`;
     this.img.className = "img";
     this.img.style.width = `${this.imgWidth}%`
     this.img.addEventListener("click", () => {

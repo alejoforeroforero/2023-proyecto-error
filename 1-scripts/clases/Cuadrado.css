@@ -2,10 +2,10 @@
     cursor: pointer;
 }
 
-img {
-    width: 150%;
+.cuadrado img {
+    width: 100%;
 }
 
-img:hover {
-    transform: scale(2);
+.cuadrado img:hover {
+    transform: scale(3);
 }
