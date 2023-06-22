@@ -1,0 +1,63 @@
+.menu{
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top:1px;
+    width:300px;
+    height: 90vh;
+    transition: 1s;
+    background-color: #f3f2f2;
+}
+
+.menu-lista{
+    text-align: center;
+}
+
+.menu-lista p{
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.menu-lista p:hover{
+    background-color: azure;
+}
+
+.hamburguesa{
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top:0;
+    width:40px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hamburguesa div{
+    border-top:2px solid #ededed;
+    height: 6px;
+}
+
+.oculto{
+    left: -300px;
+}
+
+visible{
+    left:0px;
+}
+
+.titulo{
+    position: fixed;
+    text-align: center;
+    top:0px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.5rem;
+    letter-spacing: 8px;
+    background-color: rgb(34, 31, 31);
+    width: 100%;
+    color:#f3f2f2;
+}
