@@ -8,13 +8,30 @@
     <link rel="stylesheet" href="index.css?n=1" />
   </head>
   <body>
-    <video width="420" autoplay muted loop playsinline>
-      <source src="index.mp4?n=1" type="video/mp4" />
-    </video>
-    <h1>Proyecto Error</h1>
+    <video id="video-fondo" autoplay muted loop playsinline></video>
+    <h1>Proyecto <br>Error</h1>
     <div>
-        <a href="./experimental/" target="_blank">Experimentos</a>
-        <a href="./web/" target="_blank">Web</a>
+      <a href="./experimental/" target="_blank">Experimentos</a>
+      <a href="./web/" target="_blank">Web</a>
     </div>
   </body>
+
+  <script>
+    window.onload = () => {
+      escogerVideo();
+    };
+
+    function escogerVideo() {
+      let video = document.getElementById("video-fondo");
+
+      if (screen.width > 800) {
+        video.src = "prueba3.mp4?n=1";
+      }
+
+      if (screen.width <= 800) {
+        video.src = "prueba2.mp4?n=1";
+      }
+      video.load();
+    }
+  </script>
 </html>

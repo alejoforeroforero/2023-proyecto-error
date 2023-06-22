@@ -5,7 +5,7 @@ let videoObj;
 correr();
 
 function correr() {
-  videoObj = new VideoObj();
+  //videoObj = new VideoObj();
 
   const section = cE("section", document.body);
   section.className = "contenedor-general";

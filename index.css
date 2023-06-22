@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* font-family: 'Mynerve', cursive; */
+    font-family: 'Walter Turncoat', cursive;
+    line-height: 1.4rem;
 }
 
 body{
@@ -19,10 +25,10 @@ video{
 
 h1{
     z-index: 2;
-    color:rgb(255, 255, 255);
+    color:rgb(122, 250, 115);
     margin-top: 30vh;
     text-align: center;
-    font-size: 45px;    
+    font-size: 60px;    
 }
 
 div{
@@ -30,13 +36,17 @@ div{
     color:rgb(255, 255, 255);
     display: flex;
     justify-content:space-around;
-    padding: 20vh;
+    padding: 18vh;
 }
 
 div a{
     z-index: 3;
-    font-size: 32px;
+    font-size: 46px;
     cursor:pointer;
-    color:rgb(255, 255, 255);
+    color:rgb(225, 255, 251);
     text-decoration: none;
+}
+
+div a:hover{
+    color:rgb(249, 119, 112);
 }
