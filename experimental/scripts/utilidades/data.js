@@ -1,4 +1,4 @@
-const imgsArray = [
+export const imgsArray = [
     {
       id: 1,
       videos:['1','25'],

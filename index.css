@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: 'Mynerve', cursive; */
-    font-family: 'Walter Turncoat', cursive;
-    line-height: 1.4rem;
+    font-family: 'Mynerve', cursive;
+    /* font-family: 'Walter Turncoat', cursive; */
+    /* font-family: 'Foldit', cursive; */
+    font-family: 'Special Elite', cursive;
+    /* font-family: 'Syne Mono', monospace;
+    font-family: 'Merriweather Sans', sans-serif; */
+    line-height: 3rem;
+    font-size: 12px;
 }
 
 body{
@@ -28,7 +37,8 @@ h1{
     color:rgb(122, 250, 115);
     margin-top: 30vh;
     text-align: center;
-    font-size: 60px;    
+    font-size: 8rem;
+    font-family: 'Foldit', cursive;    
 }
 
 div{
@@ -41,9 +51,9 @@ div{
 
 div a{
     z-index: 3;
-    font-size: 46px;
+    font-size: 5rem;
     cursor:pointer;
-    color:rgb(225, 255, 251);
+    color:rgb(255, 231, 200);
     text-decoration: none;
 }
 

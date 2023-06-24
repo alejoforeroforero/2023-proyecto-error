@@ -1,4 +1,8 @@
-class VideoObj {
+import { cE } from "../utilidades/utilidades.js";
+import { imgsArray } from "../utilidades/data.js";
+import { escogerSeccion } from "../index.js";
+
+export class VideoObj {
   contenedor = null;
   index = 0;
   imgObj;

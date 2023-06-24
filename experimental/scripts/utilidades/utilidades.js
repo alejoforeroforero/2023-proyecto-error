@@ -1,4 +1,4 @@
-function cE(tag, parentEl) {
+export function cE(tag, parentEl) {
   let htmlObj = document.createElement(tag);
   parentEl.appendChild(htmlObj);
 

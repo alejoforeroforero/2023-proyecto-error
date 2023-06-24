@@ -1,12 +1,14 @@
-let cuadrados = [];
-let contenedorGeneral;
-let videoObj;
+import { cE } from "./utilidades/utilidades.js";
+import { pintarHome } from "./paginas/home.js";
+import { VideoObj } from "./clases/VideoObj.js";
+
+export let contenedorGeneral;
+export const videoObj = new VideoObj();
 
 correr();
 
 function correr() {
-  //videoObj = new VideoObj();
-
+ 
   const section = cE("section", document.body);
   section.className = "contenedor-general";
 
@@ -15,8 +17,9 @@ function correr() {
   escogerSeccion();
 }
 
-function escogerSeccion() {
+export function escogerSeccion() {
   contenedorGeneral.innerHTML = "";
 
-  pintarHome(contenedorGeneral);
+  pintarHome();
 }
+

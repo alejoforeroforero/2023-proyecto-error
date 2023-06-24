@@ -1,65 +1,39 @@
-function pintarHome(section) {
-  section.innerHTML = "";
+import { cE } from "../utilidades/utilidades.js";
+import { Cuadrado } from "../clases/Cuadrado.js";
+import { imgsArray } from "../utilidades/data.js";
+import { contenedorGeneral } from "../index.js";
+import { videoObj } from "../index.js";
 
-  var div = cE("div", section);
+export function pintarHome(section) {
+  contenedorGeneral.innerHTML = "";
+  let cuadrados = [];
+
+  var div = cE("div", contenedorGeneral);
   div.className = "parent-container";
+
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+}
+
+function pintarBloqueDeImagenes(div, cuadrados) {
 
   const sArray1 = shuffle(imgsArray);
 
-  for (let img of sArray1) {
+  sArray1.map((img) => {
     let cuadrado = new Cuadrado();
     cuadrado.imgId = img.id;
     cuadrado.pintar(div);
+    cuadrado.handlerOnClick = () => {
+      contenedorGeneral.innerHTML = "";
+      cancelarTimeouts(cuadrados);
+      videoObj.ponerVideo(img.id);
+    };
     cuadrados.push(cuadrado);
-  }
-
-  const sArray2 = shuffle(imgsArray);
-
-  for (let img of sArray2) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
-
-  const sArray3 = shuffle(imgsArray);
-
-  for (let img of sArray3) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
-
-  const sArray4 = shuffle(imgsArray);
-
-  for (let img of sArray4) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
-
-  const sArray5 = shuffle(imgsArray);
-
-  for (let img of sArray5) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
-
-  const sArray6 = shuffle(imgsArray);
-
-  for (let img of sArray6) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
-
-  const sArray7 = shuffle(imgsArray);
-
-  for (let img of sArray7) {
-    let cuadrado = new Cuadrado();
-    cuadrado.imgId = img.id;
-    cuadrado.pintar(div);
-  }
+  });
 }
 
 function shuffle(array) {
@@ -80,4 +54,8 @@ function shuffle(array) {
   }
 
   return array;
+}
+
+function cancelarTimeouts(cuadrados) {
+  cuadrados.map((cuadrado) => cuadrado.cancelarAnimacion());
 }

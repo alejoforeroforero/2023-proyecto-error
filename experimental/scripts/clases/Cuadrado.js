@@ -1,4 +1,6 @@
-class Cuadrado {
+import { cE } from "../utilidades/utilidades.js";
+
+export class Cuadrado {
   contenedor;
   posX;
   posY;
@@ -27,18 +29,16 @@ class Cuadrado {
     this.img.src = `../assets/imgs/home/${this.imgId}.jpg`;
     this.img.className = "img";
     this.img.style.width = `${this.imgWidth}%`
-    this.img.addEventListener("click", () => {
-      thisObj.handlerOnClick(thisObj);
-    });
+    this.img.addEventListener("click", ()=> thisObj.handlerOnClick());
 
     this.animar();
   }
 
-  handlerOnClick(thisObj) {
-    contenedorGeneral.innerHTML = "";
-    cancelarTimeouts();
-    videoObj.ponerVideo(thisObj.imgId);
-  }
+  // handlerOnClick(thisObj) {
+  //   contenedorGeneral.innerHTML = "";
+  //   cancelarTimeouts();
+  //   videoObj.ponerVideo(thisObj.imgId);
+  // }
 
   animar() {
     let thisObj = this;
@@ -73,10 +73,3 @@ class Cuadrado {
   }
 }
 
-function cancelarTimeouts() {
-  for (const cuadrado of cuadrados) {
-    cuadrado.cancelarAnimacion();
-  }
-
-  cuadrados = [];
-}
