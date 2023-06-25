@@ -1,21 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Foldit&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Mynerve', cursive;
-    /* font-family: 'Walter Turncoat', cursive; */
-    /* font-family: 'Foldit', cursive; */
-    font-family: 'Special Elite', cursive;
-    /* font-family: 'Syne Mono', monospace;
-    font-family: 'Merriweather Sans', sans-serif; */
-    line-height: 3rem;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 12px;
 }
 
@@ -25,7 +15,7 @@ body{
 
 video{
     width: 100%;
-    filter: opacity(0.4);
+    filter: opacity(0.6);
     position: absolute;
     z-index: 1;
     left: 0px;
@@ -34,29 +24,42 @@ video{
 
 h1{
     z-index: 2;
-    color:rgb(122, 250, 115);
-    margin-top: 30vh;
+    color:rgb(131, 137, 200);
+    margin-top: 25vh;
     text-align: center;
-    font-size: 8rem;
-    font-family: 'Foldit', cursive;    
+    font-size: 6rem; 
+    line-height: 4rem;
+    letter-spacing: 1rem; 
+    font-family: 'Albert Sans', sans-serif;
 }
 
-div{
+.menu{
     z-index: 2;
     color:rgb(255, 255, 255);
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     padding: 18vh;
 }
 
-div a{
+.menu p{
     z-index: 3;
-    font-size: 5rem;
+    width: 50%;
+    margin: 0px 4%;
+    text-align: center;
+}
+
+/* .menu p:first-child{
+    text-align: right;
+} */
+
+.menu a{
+    z-index: 3;
+    font-size: 4rem;
     cursor:pointer;
     color:rgb(255, 231, 200);
     text-decoration: none;
 }
 
-div a:hover{
+.menu a:hover{
     color:rgb(249, 119, 112);
 }

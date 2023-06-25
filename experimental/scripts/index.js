@@ -1,5 +1,5 @@
 import { cE } from "./utilidades/utilidades.js";
-import { pintarHome } from "./paginas/home.js";
+import { pintarTira } from "./paginas/tira.js";
 import { VideoObj } from "./clases/VideoObj.js";
 
 export let contenedorGeneral;
@@ -20,6 +20,6 @@ function correr() {
 export function escogerSeccion() {
   contenedorGeneral.innerHTML = "";
 
-  pintarHome();
+  pintarTira();
 }
 

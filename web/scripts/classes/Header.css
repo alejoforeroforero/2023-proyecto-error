@@ -1,0 +1,53 @@
+header{
+    position: sticky;
+    width:100%;
+    left:0px;
+    top:0px;
+    z-index: 120;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    font-family: DMSans,Helvetica,Arial,"Lucida Grande",sans-serif;
+    background-color: rgba(42, 42, 42, 0.4);
+    font-size: 30px;
+}
+
+header>div{
+    width:25%;
+    height: 40px;
+}
+
+header>div:nth-child(2){
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.hamburguesa{
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.hamburguesa>div{
+    border:1px solid rgb(206, 204, 204);
+    width:30px;
+    height: 1px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}

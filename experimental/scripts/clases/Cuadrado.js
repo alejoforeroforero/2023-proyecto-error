@@ -4,18 +4,18 @@ export class Cuadrado {
   contenedor;
   posX;
   posY;
-  vel = Math.floor(Math.random() * (200 - 100) + 70);
+  vel = Math.floor(Math.random()*(160 - 120) + 120);
   contador = 0;
-  tope = Math.floor(Math.random() * (100 - 40) + 80);
+  tope = Math.floor(Math.random()*(140 - 60) + 60);
   area;
   ancho;
   alto;
-  anchoMax = 70;
-  anchoMin1 = 64;
-  anchoMin2 = 64;
+  anchoMax = 40;
+  anchoMin1 = 35;
+  anchoMin2 = 27;
   img;
   imgId;
-  imgWidth = 150;
+  imgWidth = 130;
   timeOut;
 
   pintar(parentEl) {
@@ -33,12 +33,6 @@ export class Cuadrado {
 
     this.animar();
   }
-
-  // handlerOnClick(thisObj) {
-  //   contenedorGeneral.innerHTML = "";
-  //   cancelarTimeouts();
-  //   videoObj.ponerVideo(thisObj.imgId);
-  // }
 
   animar() {
     let thisObj = this;

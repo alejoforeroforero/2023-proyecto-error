@@ -4,13 +4,19 @@ import { imgsArray } from "../utilidades/data.js";
 import { contenedorGeneral } from "../index.js";
 import { videoObj } from "../index.js";
 
-export function pintarHome(section) {
+export function pintarTira(section) {
   contenedorGeneral.innerHTML = "";
   let cuadrados = [];
 
   var div = cE("div", contenedorGeneral);
   div.className = "parent-container";
 
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
+  pintarBloqueDeImagenes(div, cuadrados);
   pintarBloqueDeImagenes(div, cuadrados);
   pintarBloqueDeImagenes(div, cuadrados);
   pintarBloqueDeImagenes(div, cuadrados);
