@@ -7,6 +7,6 @@ export function pintarReflexiones() {
   bajarCss(enlace, dibujarReflexiones);
 }
 
-function dibujarReflexiones(){
-    contenido.main.innerHTML = "Reflexiones";
+function dibujarReflexiones() {
+  contenido.main.innerHTML = "Reflexiones 2";
 }
