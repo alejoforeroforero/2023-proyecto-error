@@ -10,8 +10,9 @@ header{
     align-items: center;
     color:rgb(255, 255, 255);
     font-family: DMSans,Helvetica,Arial,"Lucida Grande",sans-serif;
-    background-color: rgba(42, 42, 42, 0.4);
-    font-size: 30px;
+    background-color: rgba(31, 31, 31, 0.7);
+    font-size: 22px;
+    letter-spacing: 5px;
 }
 
 header>div{

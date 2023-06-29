@@ -1,5 +1,5 @@
-import { bajarCss } from "../componentes/css.js?n=2";
-import { tag } from "../componentes/tag.js?n=2";
+import { bajarCss } from "../componentes/css.js?n=3";
+import { tag } from "../componentes/tag.js?n=3";
 
 class Menu {
   menuActivo = false;
@@ -15,8 +15,12 @@ class Menu {
     const nav = tag("nav", this.menuC);
 
     this.pintarMenuItem(nav, "Home", "#/home");
-    this.pintarMenuItem(nav, "Frames", "#/frames");
+    this.pintarMenuItem(nav, "Categorias", "#/categorias");
     this.pintarMenuItem(nav, "Reflexiones", "#/reflexiones");
+    this.pintarMenuItem(nav, "Talleres", "#/talleres");
+    this.pintarMenuItem(nav, "Maquina", "#/maquina");
+    this.pintarMenuItem(nav, "Película", "#/pelicula");
+    this.pintarMenuItem(nav, "Créditos", "#/creditos");
   }
 
   pintarMenuItem(nav, titulo, locacion) {

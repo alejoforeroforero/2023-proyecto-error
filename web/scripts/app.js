@@ -1,10 +1,14 @@
-import { header } from "./classes/Header.js?n=2";
-import { menu } from "./classes/Menu.js?n=2";
-import { contenido } from "./classes/Contenido.js?n=2";
-import { tag } from "./componentes/tag.js?n=2";
-import { pintarHome } from "./secciones/home.js?n=2";
-import { pintarFrames } from "./secciones/frames.js?n=2";
-import { pintarReflexiones } from "./secciones/reflexiones.js?n=2";
+import { header } from "./classes/Header.js?n=3";
+import { menu } from "./classes/Menu.js?n=3";
+import { contenido } from "./classes/Contenido.js?n=3";
+import { tag } from "./componentes/tag.js?n=3";
+import { pintarHome } from "./secciones/home.js?n=3";
+import { pintarFrames } from "./secciones/frames.js?n=3";
+import { pintarReflexiones } from "./secciones/reflexiones.js?n=3";
+import { pintarTalleres } from "./secciones/talleres.js?n=3";
+import { pintarMaquina } from "./secciones/maquina.js?n=3";
+import { pintarPelicula } from "./secciones/pelicula.js?n=3";
+import { pintarCreditos } from "./secciones/creditos.js?n=3";
 
 empezar();
 
@@ -35,10 +39,18 @@ function escogerSeccion() {
 
   if (nombrePagina === "#/home") {
     pintarHome();
-  } else if (nombrePagina === "#/frames") {
+  } else if (nombrePagina === "#/categorias") {
     pintarFrames();
   } else if (nombrePagina === "#/reflexiones") {
     pintarReflexiones();
+  } else if (nombrePagina === "#/talleres") {
+    pintarTalleres();
+  } else if (nombrePagina === "#/maquina") {
+    pintarMaquina();
+  } else if (nombrePagina === "#/pelicula") {
+    pintarPelicula();
+  } else if (nombrePagina === "#/creditos") {
+    pintarCreditos();
   } else {
     pintarHome();
   }

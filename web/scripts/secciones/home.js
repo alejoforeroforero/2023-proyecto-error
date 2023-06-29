@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=2";
-import { bajarCss } from "../componentes/css.js?n=2";
-import { contenido } from "../classes/Contenido.js?n=2";
+import { tag } from "../componentes/tag.js?n=3";
+import { bajarCss } from "../componentes/css.js?n=3";
+import { contenido } from "../classes/Contenido.js?n=3";
 
 export function pintarHome() {
   const enlace = "./scripts/secciones/home.css";
@@ -10,8 +10,20 @@ export function pintarHome() {
 function dibujarHome(){
     contenido.main.innerHTML = "";
 
-    const divP = tag("div", contenido.main);
-    divP.innerHTML = "Proyecto Error";
+    const divF = tag("div", contenido.main);
+    divF.className = "home-fondo";
+
+    const img = tag("img", divF);
+    img.src = "./assets/home.jpg";
+
+    const divC = tag("div", divF);
+    divC.className = "home-hero";
+
+    const divP = tag("div", divC);
+
+    const p = tag("p", divP);
+    p.innerHTML = "El tiempo del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo";
+
 }
 
 

@@ -1,0 +1,16 @@
+.reflexiones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reflexiones img{
+    border-radius: 12px;
+    width: 40%;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.reflexiones img:hover{
+    filter: blur(2px);
+}

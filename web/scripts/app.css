@@ -1,19 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    font-size: 14px;
+:root {
+  font-size: 14px;
 }
 
 body {
-    background-color: rgb(60, 60, 60);
+  background-color: #303030;
 }
 
 main {
-    position: relative;
+  position: relative;
+  background-color: #fffdfd;
+  min-height: 100vh;
+}
+
+.submenu {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1%;
+}
+
+.submenu span {
+  color: rgb(116, 116, 116);
+  font-size: 1.3rem;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.submenu-titulo {
+  color: rgb(107, 107, 107);
+  font-size: 2rem;
+  padding: 2%;
+  text-align: center;
+}
+
+.submenu-explicacion p {
+  font-size: 1.2rem;
+  color: #a9a8a8;
+  text-align: center;
+  padding: 2% 8%;
+}
+
+.frame-pc-fondo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 300;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.frame-pc-cerrar {
+  z-index: 32;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  text-align: right;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: rgb(44, 44, 45);
+  background-color: aliceblue;
+}
+
+.frame-pc-cerrar:hover {
+  color: #fa9c6d;
+}
+
+.frame-pc-ic{
+    width:100%;
+    padding: 2%;
+}
+
+.frame-pc-ic video{
+    max-width:80%;
+    border-radius: 4px;
+    max-height: 95vh;
+    border: 1px solid rgb(117, 117, 117);
+}
+
+.frame-pc-ic img{
+    max-width:80%;
+    border-radius: 4px;
+    max-height: 95vh;
+    border: 1px solid rgb(117, 117, 117);
+}
+
+.contenido-seccion-general{
+  background-color: #fefefe;
 }

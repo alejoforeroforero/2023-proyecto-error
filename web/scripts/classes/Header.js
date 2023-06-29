@@ -1,6 +1,6 @@
-import { bajarCss } from "../componentes/css.js?n=2";
-import { tag } from "../componentes/tag.js?n=2";
-import { menu } from "../classes/Menu.js?n=2";
+import { bajarCss } from "../componentes/css.js?n=3";
+import { tag } from "../componentes/tag.js?n=3";
+import { menu } from "../classes/Menu.js?n=3";
 
 class Header {
   pintar() {
@@ -15,7 +15,7 @@ class Header {
     this.pintarLogoHeader(logoH);
 
     const centroH = tag("div", this.headerC);
-    centroH.innerHTML = "Proyecto Error";
+    centroH.innerHTML = "El tiempo del error";
 
     const loginH = tag("div", this.headerC);
     loginH.className = "header-menu";

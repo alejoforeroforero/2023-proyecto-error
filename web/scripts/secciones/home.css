@@ -1,0 +1,43 @@
+.home-fondo {
+  height: 100vh;
+  background-color: #000;
+}
+
+.home-fondo>img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  filter: opacity(0.8);
+  z-index: 1;
+}
+
+.home-hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-hero>div{
+    width:80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.home-hero>div p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    width: 60%;
+}
+
+.home-hero>div img{
+    width:80%;
+    border-radius: 20px;
+}

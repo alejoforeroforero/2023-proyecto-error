@@ -1,15 +1,15 @@
-import { tag } from "../componentes/tag.js?n=2";
-import { bajarCss } from "../componentes/css.js?n=2";
-import { contenido } from "../classes/Contenido.js?n=2";
-import { Frame } from "../classes/Frame.js?n=2";
+import { tag } from "../componentes/tag.js?n=3";
+import { bajarCss } from "../componentes/css.js?n=3";
+import { contenido } from "../classes/Contenido.js?n=3";
+import { Frame } from "../classes/Frame.js?n=3";
 
 export function pintarFrames() {
-  const enlace = "./scripts/secciones/frames.css?n=2";
+  const enlace = "./scripts/secciones/frames.css?n=3";
   bajarCss(enlace, bajarFramesPopup);
 }
 
 function bajarFramesPopup(){
-  const enlace = "./scripts/classes/Frame.css?n=2";
+  const enlace = "./scripts/classes/Frame.css?n=3";
   bajarCss(enlace, dibujarFrames);
 }
 
@@ -21,10 +21,18 @@ let videosCat = [
 ];
 
 function dibujarFrames() {
+  contenido.main.innerHTML = "";
+
   const seccion = tag("section", contenido.main);
 
+  const divE = tag("div", seccion);
+  divE.className = "submenu-explicacion";
+
+  const p = tag("p", divE);
+  p.innerHTML = "Te invitamos a observar los frames donados por los artistas y a participar en el proyecto descargando alguno de los frames o secuencias para realizar una animación. Puedes organizar los frames por las categorias disponibles a continuación:";
+
   const divC = tag("div", seccion);
-  divC.className = "frames-categorias";
+  divC.className = "submenu";
 
   const divF = tag("div", seccion);
   
@@ -108,7 +116,7 @@ async function pintarFramesSeleccionados(categoria, padre) {
   await delay(800);
 
   const divT = tag("div", padre);
-  divT.className = "frames-titulo"
+  divT.className = "submenu-titulo"
   divT.innerHTML = (categoria) ? categoria.titulo : "Todos";
 
   const divFrames = tag("div", padre);
@@ -136,7 +144,7 @@ async function pintarFramesSeleccionados(categoria, padre) {
 function crearFrame(divFI, n) {
   let ext = videosCat.indexOf(n) < 0 ? "_P.jpg" : "_O.mp4";
 
-  let nombre = `../../assets/imgs/categorias/${n}${ext}`;
+  let nombre = `../assets/imgs/categorias/${n}${ext}`;
 
   const divV = tag("span",divFI);
   divV.className = "frames-header";

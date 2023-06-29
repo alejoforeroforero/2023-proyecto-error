@@ -1,5 +1,5 @@
 export function bajarCss(estiloSrc, ejecutar) {
-    const enlace = `${estiloSrc}?n=2`;
+    const enlace = `${estiloSrc}?n=3`;
     const xhr = new XMLHttpRequest();
     xhr.open("GET", enlace);
     xhr.onreadystatechange = function () {

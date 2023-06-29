@@ -1,5 +1,5 @@
-import { bajarCss } from "../componentes/css.js?n=2";
-import { tag } from "../componentes/tag.js?n=2";
+import { bajarCss } from "../componentes/css.js?n=3";
+import { tag } from "../componentes/tag.js?n=3";
 
 class Contenido{
     main;
