@@ -1,15 +1,15 @@
-import { tag } from "../componentes/tag.js?n=3";
-import { bajarCss } from "../componentes/css.js?n=3";
-import { contenido } from "../classes/Contenido.js?n=3";
-import { Frame } from "../classes/Frame.js?n=3";
+import { tag } from "../componentes/tag.js?n=5";
+import { bajarCss } from "../componentes/css.js?n=5";
+import { contenido } from "../classes/Contenido.js?n=5";
+import { Frame } from "../classes/Frame.js?n=5";
 
 export function pintarFrames() {
-  const enlace = "./scripts/secciones/frames.css?n=3";
+  const enlace = "./scripts/secciones/frames.css?n=5";
   bajarCss(enlace, bajarFramesPopup);
 }
 
 function bajarFramesPopup(){
-  const enlace = "./scripts/classes/Frame.css?n=3";
+  const enlace = "./scripts/classes/Frame.css?n=5";
   bajarCss(enlace, dibujarFrames);
 }
 

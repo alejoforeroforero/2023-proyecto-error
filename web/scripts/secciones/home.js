@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=3";
-import { bajarCss } from "../componentes/css.js?n=3";
-import { contenido } from "../classes/Contenido.js?n=3";
+import { tag } from "../componentes/tag.js?n=5";
+import { bajarCss } from "../componentes/css.js?n=5";
+import { contenido } from "../classes/Contenido.js?n=5";
 
 export function pintarHome() {
   const enlace = "./scripts/secciones/home.css";
