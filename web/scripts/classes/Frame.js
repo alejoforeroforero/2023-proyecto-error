@@ -2,6 +2,7 @@ import { tag } from "../componentes/tag.js";
 
 export class Frame {
   contenedor = null;
+  controles = false;
 
   ponerFrame(id) {
     let thisObj = this;
@@ -39,6 +40,7 @@ export class Frame {
     if (ext === "mp4") {
       const video = tag("video", this.frameIC);
       video.src = id;
+      video.controls = this.controles;
       video.loop = true;
       setTimeout(() => {
         video.play();

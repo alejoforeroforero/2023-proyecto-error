@@ -106,6 +106,7 @@ function pintarEntrevistas(padre) {
     img.src = entrevista.img;
     img.addEventListener("click", ()=>{
       const frameObj = new Frame();
+      frameObj.controles = true;
       frameObj.ponerFrame(entrevista.video);
     })
   })

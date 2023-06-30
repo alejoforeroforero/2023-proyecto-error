@@ -45,13 +45,22 @@
 }
 
 .frames-header-btn {
-  font-size: 1.4rem;
-  padding: 2px 12px;
+  padding: 0px;
   background-color: rgba(13, 13, 13, 0.4);
   border-radius: 14px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 4px;
 }
 
 .frames-header-btn:hover {
   background-color: rgba(187, 185, 185, 0.9);
+}
+
+.frames-header-btn img{
+  width:20px;
+  filter: invert(1);
 }

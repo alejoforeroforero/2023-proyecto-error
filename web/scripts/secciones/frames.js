@@ -151,17 +151,21 @@ function crearFrame(divFI, n) {
 
   const spanOjo = tag("span", divV);
   spanOjo.className = "frames-header-btn";
-  spanOjo.innerHTML = "&#9903;";
   spanOjo.addEventListener("click", ()=>{
     const frameObj = new Frame();
     frameObj.ponerFrame(nombre);
   })
 
+  const eye = tag("img", spanOjo);
+  eye.src = "./assets/eye.png";
+
   if (ext === "_P.jpg") {
 
     const span = tag("span", divV);
     span.className = "frames-header-btn";
-    span.innerHTML = "&#8595;";
+    
+    const descargar = tag("img", span);
+    descargar.src = "./assets/descargar.png";
 
     const img = tag("img", divFI);
     img.src = nombre;  
@@ -173,7 +177,9 @@ function crearFrame(divFI, n) {
 
     const span = tag("span", divV);
     span.className = "frames-header-btn";
-    span.innerHTML = "&#8595;";
+    
+    const descargar = tag("img", span);
+    descargar.src = "./assets/descargar.png";
 
     const video = tag("video", divFI);
     video.src = nombre;    
