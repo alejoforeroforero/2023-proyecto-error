@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=6";
-import { bajarCss } from "../componentes/css.js?n=6";
-import { contenido } from "../classes/Contenido.js?n=6";
+import { tag } from "../componentes/tag.js?n=7";
+import { bajarCss } from "../componentes/css.js?n=7";
+import { contenido } from "../classes/Contenido.js?n=7";
 
 export function pintarPelicula() {
   const enlace = "./scripts/secciones/pelicula.css";

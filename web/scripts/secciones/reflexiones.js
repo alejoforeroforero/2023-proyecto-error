@@ -1,7 +1,7 @@
-import { tag } from "../componentes/tag.js?n=6";
-import { bajarCss } from "../componentes/css.js?n=6";
-import { contenido } from "../classes/Contenido.js?n=6";
-import { Frame } from "../classes/Frame.js?n=6";
+import { tag } from "../componentes/tag.js?n=7";
+import { bajarCss } from "../componentes/css.js?n=7";
+import { contenido } from "../classes/Contenido.js?n=7";
+import { Frame } from "../classes/Frame.js?n=7";
 
 export function pintarReflexiones() {
   const enlace = "./scripts/secciones/reflexiones.css";

@@ -1,5 +1,5 @@
-import { bajarCss } from "../componentes/css.js?n=6";
-import { tag } from "../componentes/tag.js?n=6";
+import { bajarCss } from "../componentes/css.js?n=7";
+import { tag } from "../componentes/tag.js?n=7";
 
 class Menu {
   menuActivo = false;
