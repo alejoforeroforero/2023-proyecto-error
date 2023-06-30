@@ -22,7 +22,7 @@ function dibujarHome(){
     const divP = tag("div", divC);
 
     const p = tag("p", divP);
-    p.innerHTML = "El tiempo del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo";
+    p.innerHTML = "Aca va el texto introductorio que habla sobre el proyecto, bla bla bla, El tiempo del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo";
 
 }
 

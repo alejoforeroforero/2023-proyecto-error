@@ -30,10 +30,14 @@ main {
 }
 
 .submenu span {
-  color: rgb(116, 116, 116);
+  color: rgb(255, 255, 255);
   font-size: 1.3rem;
   margin: 0px 20px;
   cursor: pointer;
+  margin: 2px 4px;
+  background-color: #fa9c6d;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .submenu-titulo {
@@ -41,6 +45,20 @@ main {
   font-size: 2rem;
   padding: 2%;
   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .submenu {
+    justify-content: center;
+    padding: 3% 1%;
+  }
+
+  .submenu span {
+    margin: 2px 4px;
+    font-size: 1rem;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
 }
 
 .submenu-explicacion p {
@@ -79,25 +97,25 @@ main {
   color: #fa9c6d;
 }
 
-.frame-pc-ic{
-    width:100%;
-    padding: 2%;
+.frame-pc-ic {
+  width: 100%;
+  padding: 2%;
 }
 
-.frame-pc-ic video{
-    max-width:80%;
-    border-radius: 4px;
-    max-height: 95vh;
-    border: 1px solid rgb(117, 117, 117);
+.frame-pc-ic video {
+  max-width: 80%;
+  border-radius: 4px;
+  max-height: 95vh;
+  border: 1px solid rgb(117, 117, 117);
 }
 
-.frame-pc-ic img{
-    max-width:80%;
-    border-radius: 4px;
-    max-height: 95vh;
-    border: 1px solid rgb(117, 117, 117);
+.frame-pc-ic img {
+  max-width: 80%;
+  border-radius: 4px;
+  max-height: 95vh;
+  border: 1px solid rgb(117, 117, 117);
 }
 
-.contenido-seccion-general{
+.contenido-seccion-general {
   background-color: #fefefe;
 }

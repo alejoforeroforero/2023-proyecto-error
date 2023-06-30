@@ -11,6 +11,13 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width:600px){
+    .reflexiones img{
+        width: 90%;
+        margin: 5%;
+    }
+}
+
 .reflexiones img:hover{
     filter: blur(2px);
 }
