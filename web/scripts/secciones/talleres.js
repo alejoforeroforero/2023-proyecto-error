@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=5";
-import { bajarCss } from "../componentes/css.js?n=5";
-import { contenido } from "../classes/Contenido.js?n=5";
+import { tag } from "../componentes/tag.js?n=6";
+import { bajarCss } from "../componentes/css.js?n=6";
+import { contenido } from "../classes/Contenido.js?n=6";
 
 export function pintarTalleres() {
   const enlace = "./scripts/secciones/talleres.css";

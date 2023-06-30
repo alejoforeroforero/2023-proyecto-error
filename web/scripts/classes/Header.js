@@ -1,6 +1,6 @@
-import { bajarCss } from "../componentes/css.js?n=5";
-import { tag } from "../componentes/tag.js?n=5";
-import { menu } from "../classes/Menu.js?n=5";
+import { bajarCss } from "../componentes/css.js?n=6";
+import { tag } from "../componentes/tag.js?n=6";
+import { menu } from "../classes/Menu.js?n=6";
 
 class Header {
   pintar() {
