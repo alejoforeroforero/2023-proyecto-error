@@ -19,11 +19,26 @@ function dibujarHome(){
     const divC = tag("div", divF);
     divC.className = "home-hero";
 
+    const divCita = tag("div", divC);
+    divCita.className = "home-cita";
+
+    const p = tag("p", divCita);
+    p.innerHTML = "Según la acepción más común errar consiste en ir de un lado a otro y dejar que sea el azar quien guíe nuestros pasos. Pero errar también significa arriesgarse a cometer errores. Errar es la forma en que vagabundea la serendipidad.<br>"+
+    "Clément Chéroux, (Breve historia del error fotográfico, Serieve, 2009, México. Pg.135"
+
     const divP = tag("div", divC);
+    divP.className = "home-parrafo";    
 
-    const p = tag("p", divP);
-    p.innerHTML = "Aca va el texto introductorio que habla sobre el proyecto, bla bla bla, El tiempo del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo, del error surge a partir de la pregunta sobre el tiempo";
-
+    const p2 = tag("p", divP);
+    p2.innerHTML = "El Tiempo del error, es el resultado de una serie de ejercicios audiovisuales que exploran la composición del tiempo en la animación a partir de imágenes que han sido rechazadas como errores en otros procesos de creación.<br>"+
+    "Se conformó un archivo de fotogramas donados por distintos animadores y animadoras que se convirtieron en la materia prima de experimentación colectiva alrededor de las posibilidades que se abren al trabajar desde y con el error."
+    
+    const p3 = tag("p", divP);
+    p3.innerHTML = "Apoyado por: <br>"+    
+    "Vicerrectoría de investigación <br>"+
+    "Pontificia Universidad Javeriana <br>"+
+    "Universidad Autónoma de México <br>"+
+    "Moebius Animación"
 }
 
 

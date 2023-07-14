@@ -4,20 +4,35 @@
     justify-content: space-around;
 }
 
-.reflexiones img{
-    border-radius: 12px;
-    width: 40%;
-    margin: 2%;
-    cursor: pointer;
+.reflexiones>div{
+    width: 46%;
+    overflow: hidden;
+    padding: 2%;
+    text-align: center;
 }
 
-@media only screen and (max-width:600px){
+.reflexiones>div>img{
+    width: 90%;
+    border-radius: 12px;
+    margin: 2%;
+}
+
+.reflexiones p{
+    padding: 0% 3%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color:#676767;
+    margin-bottom: 30px;
+}
+
+/* @media only screen and (max-width:600px){
     .reflexiones img{
         width: 90%;
         margin: 5%;
     }
-}
+} */
 
-.reflexiones img:hover{
+/* .reflexiones img:hover{
     filter: blur(2px);
-}
+} */

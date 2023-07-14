@@ -61,9 +61,22 @@ main {
   }
 }
 
+.submenu-explicacion h1{
+  text-align: center;
+  color: #676767;
+  font-size: 2.5rem;
+  padding: 2% 2% 0.4% 2%;
+}
+
+.submenu-explicacion h2{
+  text-align: center;
+  color: #676767;
+  font-size: 1.6rem;
+}
+
 .submenu-explicacion p {
   font-size: 1.2rem;
-  color: #a9a8a8;
+  color: #757575;
   text-align: center;
   padding: 2% 8%;
 }
