@@ -43,21 +43,25 @@ function pintarSubmenu(padre, padreContenido) {
       titulo: "Donantes errores",
     },
     {
-      id: "errorospcopio",
-      titulo: "Errorospcopio",
+      id: "animaciones",
+      titulo: "Animación e intervenciones:",
     },
-    {
-      id: "participantes",
-      titulo: "Participantes de los talleres y clases de animación",
-    },
-    {
-      id: "cortometraje",
-      titulo: "Cortometraje",
-    },
-    {
-      id: "agradecimientos",
-      titulo: "Agradecimientos",
-    },
+    // {
+    //   id: "errorospcopio",
+    //   titulo: "Errorospcopio",
+    // },
+    // {
+    //   id: "participantes",
+    //   titulo: "Participantes de los talleres y clases de animación",
+    // },
+    // {
+    //   id: "cortometraje",
+    //   titulo: "Cortometraje",
+    // },
+    // {
+    //   id: "agradecimientos",
+    //   titulo: "Agradecimientos",
+    // },
   ];
 
   creditosInfo.map((submenu) => {
@@ -91,7 +95,7 @@ function pintarContenido(padre, submenu) {
     pintarAgradecimientos(divC);
   }
   else{
-    pintarCortometraje(divC);
+    pintarAnimacion(divC);
   }
 }
 
@@ -144,6 +148,55 @@ function pintarDonantes(padre){
   "Jaime Cleeland<br>"+
   "Ana María Vallejo<br>"+
   "Cecilia Traslaviña"
+}
+
+function pintarAnimacion(padre){
+  const p = tag("p", padre);
+  p.innerHTML = "Tania de León Yong <br>"+
+  "Santiago Ordóñez<br>"+
+  "Patricia Pulido <br>"+
+  "Alejandro Forero<br>"+
+  "Carolina Lucio<br>"+
+  "Sol Molina<br>"+
+  "Bibiana Rojas<br>"+
+  "Cecilia Traslaviña <br>"+
+  "Nicolas León <br>"+
+  "Samuel Ángel Galeano<br>"+ 
+  "Cristina Franco <br>"+
+  "María Lucia González<br>"+
+  "Paula Ruiz <br>"+
+  "Laurent Cabarcas<br>"+
+  "Diego Fernández<br>"+
+  "Esteban Forero<br>"+
+  "Pablo Herrera<br>"+
+  "Paola Marín<br>"+
+  "Sophia Nieto<br>"+
+  "Alejandro Prieto<br>"+
+  "Paulina Zapata<br>"+
+  "Laura Helena Hernández<br>"+
+  "Sofía Peña<br>"+
+  "Sergio Alejandro Prieto<br>"+
+  "Samuel Varón<br>"+
+  "Ana Velandia<br>"+
+  "Natalia Roa Sánchez<br>"+
+  "Sara Osorio<br>"+
+  "Gildardo Martínez<br>"+
+  "Adriana Zúñiga<br>"+
+  "Natalia Argüello<br>"+
+  "Carlos David Cruz<br>"+
+  "Kevin Gallego<br>"+
+  "John Gómez<br>"+
+  "Francia Rodríguez<br>"+
+  "Juan Diego Orozco<br>"+
+  "Meli Marcow<br>"+
+  "Angie Montenegro<br>"+
+  "Juan Pablo Vargas<br>"+
+  "Silvana Corrales<br>"+
+  "María Urcuqui<br>"+
+  "María del Mar Gómez<br>"+
+  "Juan Manuel Padilla<br>"+
+  "Santiago Torres<br>"+
+  "Matias Serna"
 }
 
 function pintarErrorospcopio(padre){

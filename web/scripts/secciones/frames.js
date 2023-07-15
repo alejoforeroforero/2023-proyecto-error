@@ -8,7 +8,7 @@ export function pintarFrames() {
   bajarCss(enlace, bajarFramesPopup);
 }
 
-function bajarFramesPopup(){
+function bajarFramesPopup() {
   const enlace = "./scripts/classes/Frame.css?n=7";
   bajarCss(enlace, dibujarFrames);
 }
@@ -16,8 +16,8 @@ function bajarFramesPopup(){
 let videosCat = [
   70, 71, 72, 73, 74, 80, 81, 83, 84, 85, 86, 94, 102, 106, 116, 118, 119, 120,
   122, 123, 124, 129, 153, 154, 156, 157, 158, 159, 161, 162, 163, 164, 165,
-  166, 167, 168, 169, 170, 171, 172, 173, 176, 177, 178, 179, 188, 189, 190, 191,
-  192, 193, 202, 206, 207, 208, 209, 210, 211, 212, 213
+  166, 167, 168, 169, 170, 171, 172, 173, 176, 177, 178, 179, 188, 189, 190,
+  191, 192, 193, 202, 206, 207, 208, 209, 210, 211, 212, 213,
 ];
 
 function dibujarFrames() {
@@ -29,14 +29,15 @@ function dibujarFrames() {
   divE.className = "submenu-explicacion";
 
   const p = tag("p", divE);
-  p.innerHTML = "Cuando nos enfrentamos a los errores donados, descubrimos en cada una de estas imágenes aspectos que nos llevaron a preguntarnos por qué eran un error, en algunos casos era evidente, pero en otros no, por lo que recurrimos a la imaginación, como si fuéramos arqueólogos, observamos detenidamente los contenidos de las imágenes  atentos a cualquier pista  sobre el movimiento y su temporalidad, por insignificante que fuera, basándonos en las formas, los colores, su lugar en el encuadre. Estábamos frente a imágenes solitarias que reclamaban por ser activadas. De acuerdo con Esther Leslie, “las cosas que una vez se movieron, pero que con el tiempo entraron en reposo, se vuelven rígidas, se petrifican. En animación, el proceso se invierte: las cosas que nunca se desplazaron por sí mismas se dirigen hacia el movimiento. La petrificación original se convierte en agitación” (Animation's Petrified Unrest. Pervasive Animation. Animation documentaries. Edited By Suzanne Buchan Routledge, 2014), queríamos entonces sacar esas imágenes de su petrificación confiando en su secreto temporal, ellas mismas revelarían a la persona que las activara sus temporalidades, se dirigirían hacia el movimiento.<br>"+
-"Parecería contradictorio categorizar los errores, pues, son imágenes que quedaron abandonadas, son libres, no pertenecen ya ninguna película así contengan alguna huella latente del tiempo para el que fueron creadas. Al ver estos fotogramas varias veces, era inevitable encontrar algún tipo de conexiones entre ellos por lo que decidimos crear estas categorías para invitar a jugar con ellas, y, ¿por qué no?, a crear nuevas formas de agrupar los errores";
+  p.innerHTML =
+    "Cuando nos enfrentamos a los errores donados, descubrimos en cada una de estas imágenes aspectos que nos llevaron a preguntarnos por qué eran un error, en algunos casos era evidente, pero en otros no, por lo que recurrimos a la imaginación, como si fuéramos arqueólogos, observamos detenidamente los contenidos de las imágenes  atentos a cualquier pista  sobre el movimiento y su temporalidad, por insignificante que fuera, basándonos en las formas, los colores, su lugar en el encuadre. Estábamos frente a imágenes solitarias que reclamaban por ser activadas. De acuerdo con Esther Leslie, “las cosas que una vez se movieron, pero que con el tiempo entraron en reposo, se vuelven rígidas, se petrifican. En animación, el proceso se invierte: las cosas que nunca se desplazaron por sí mismas se dirigen hacia el movimiento. La petrificación original se convierte en agitación” (Animation's Petrified Unrest. Pervasive Animation. Animation documentaries. Edited By Suzanne Buchan Routledge, 2014), queríamos entonces sacar esas imágenes de su petrificación confiando en su secreto temporal, ellas mismas revelarían a la persona que las activara sus temporalidades, se dirigirían hacia el movimiento.<br>" +
+    "Parecería contradictorio categorizar los errores, pues, son imágenes que quedaron abandonadas, son libres, no pertenecen ya ninguna película así contengan alguna huella latente del tiempo para el que fueron creadas. Al ver estos fotogramas varias veces, era inevitable encontrar algún tipo de conexiones entre ellos por lo que decidimos crear estas categorías para invitar a jugar con ellas, y, ¿por qué no?, a crear nuevas formas de agrupar los errores";
 
   const divC = tag("div", seccion);
   divC.className = "submenu";
 
   const divF = tag("div", seccion);
-  
+
   pintarCategorias(divC, divF);
 
   pintarFramesSeleccionados(null, divF);
@@ -109,7 +110,7 @@ function pintarCategorias(padre, padreFrames) {
   });
 }
 
-const delay = ms => new Promise(res => setTimeout(res, ms));
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 async function pintarFramesSeleccionados(categoria, padre) {
   padre.innerHTML = "";
@@ -117,11 +118,11 @@ async function pintarFramesSeleccionados(categoria, padre) {
   await delay(800);
 
   const divT = tag("div", padre);
-  divT.className = "submenu-titulo"
-  divT.innerHTML = (categoria) ? categoria.titulo : "Todos";
+  divT.className = "submenu-titulo";
+  divT.innerHTML = categoria ? categoria.titulo : "Todos";
 
   const divFrames = tag("div", padre);
-  divFrames.className = "frames-container"
+  divFrames.className = "frames-container";
 
   if (categoria) {
     categoria.frames.map((frameId) => {
@@ -143,47 +144,56 @@ async function pintarFramesSeleccionados(categoria, padre) {
 }
 
 function crearFrame(divFI, n) {
+
+  let esVideo = videosCat.indexOf(n) < 0 ? false : true;
   let ext = videosCat.indexOf(n) < 0 ? "_P.jpg" : "_O.mp4";
+  let nombre = `../assets/imgs/categorias/${n}_P.jpg`;
+  let nombreData = `../assets/imgs/categorias/${n}${ext}`;
+  let extDescarga = videosCat.indexOf(n) < 0 ? "_O.jpg" : "_O.mp4";
+  let nombreDescarga = `../assets/imgs/categorias/${n}${extDescarga}`;
 
-  let nombre = `../assets/imgs/categorias/${n}${ext}`;
-
-  const divV = tag("span",divFI);
+  const divV = tag("span", divFI);
   divV.className = "frames-header";
 
   const spanOjo = tag("span", divV);
   spanOjo.className = "frames-header-btn";
-  spanOjo.addEventListener("click", ()=>{
+  spanOjo.addEventListener("click", () => {
     const frameObj = new Frame();
-    frameObj.ponerFrame(nombre);
-  })
+    frameObj.ponerFrame(nombreData);
+  });
 
   const eye = tag("img", spanOjo);
   eye.src = "./assets/eye.png";
 
-  if (ext === "_P.jpg") {
-
+  if (!esVideo) {
     const span = tag("span", divV);
     span.className = "frames-header-btn";
-    
-    const descargar = tag("img", span);
+
+    const a = tag("a", span)
+    a.download = n;
+    a.href = nombreDescarga;
+
+    const descargar = tag("img", a);
     descargar.src = "./assets/descargar.png";
 
     const img = tag("img", divFI);
-    img.src = nombre;  
-
+    img.src = nombre;
   } else {
-
     const spanS = tag("span", divV);
     spanS.innerHTML = "(Secuencia) ";
 
     const span = tag("span", divV);
     span.className = "frames-header-btn";
-    
-    const descargar = tag("img", span);
+
+    const a = tag("a", span)
+    a.download = n;
+    a.href = nombreDescarga;
+
+    const descargar = tag("img", a);
     descargar.src = "./assets/descargar.png";
 
-    const video = tag("video", divFI);
-    video.src = nombre;    
+    const img = tag("img", divFI);
+    img.src = nombre;
   }
 }
 
