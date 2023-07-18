@@ -1,15 +1,15 @@
-import { tag } from "../componentes/tag.js?n=7";
-import { bajarCss } from "../componentes/css.js?n=7";
-import { contenido } from "../classes/Contenido.js?n=7";
-import { Frame } from "../classes/Frame.js?n=7";
+import { tag } from "../componentes/tag.js?n=13";
+import { bajarCss } from "../componentes/css.js?n=13";
+import { contenido } from "../classes/Contenido.js?n=13";
+import { Frame } from "../classes/Frame.js?n=13";
 
 export function pintarFrames() {
-  const enlace = "./scripts/secciones/frames.css?n=7";
+  const enlace = "./scripts/secciones/frames.css?n=13";
   bajarCss(enlace, bajarFramesPopup);
 }
 
 function bajarFramesPopup() {
-  const enlace = "./scripts/classes/Frame.css?n=7";
+  const enlace = "./scripts/classes/Frame.css?n=13";
   bajarCss(enlace, dibujarFrames);
 }
 
@@ -26,12 +26,15 @@ function dibujarFrames() {
   const seccion = tag("section", contenido.main);
 
   const divE = tag("div", seccion);
-  divE.className = "submenu-explicacion";
+  divE.className = "menu-explicacion";
 
   const p = tag("p", divE);
   p.innerHTML =
     "Cuando nos enfrentamos a los errores donados, descubrimos en cada una de estas imágenes aspectos que nos llevaron a preguntarnos por qué eran un error, en algunos casos era evidente, pero en otros no, por lo que recurrimos a la imaginación, como si fuéramos arqueólogos, observamos detenidamente los contenidos de las imágenes  atentos a cualquier pista  sobre el movimiento y su temporalidad, por insignificante que fuera, basándonos en las formas, los colores, su lugar en el encuadre. Estábamos frente a imágenes solitarias que reclamaban por ser activadas. De acuerdo con Esther Leslie, “las cosas que una vez se movieron, pero que con el tiempo entraron en reposo, se vuelven rígidas, se petrifican. En animación, el proceso se invierte: las cosas que nunca se desplazaron por sí mismas se dirigen hacia el movimiento. La petrificación original se convierte en agitación” (Animation's Petrified Unrest. Pervasive Animation. Animation documentaries. Edited By Suzanne Buchan Routledge, 2014), queríamos entonces sacar esas imágenes de su petrificación confiando en su secreto temporal, ellas mismas revelarían a la persona que las activara sus temporalidades, se dirigirían hacia el movimiento.<br>" +
-    "Parecería contradictorio categorizar los errores, pues, son imágenes que quedaron abandonadas, son libres, no pertenecen ya ninguna película así contengan alguna huella latente del tiempo para el que fueron creadas. Al ver estos fotogramas varias veces, era inevitable encontrar algún tipo de conexiones entre ellos por lo que decidimos crear estas categorías para invitar a jugar con ellas, y, ¿por qué no?, a crear nuevas formas de agrupar los errores";
+    "<br>"+
+    "Parecería contradictorio categorizar los errores, pues, son imágenes que quedaron abandonadas, son libres, no pertenecen ya ninguna película así contengan alguna huella latente del tiempo para el que fueron creadas. Al ver estos fotogramas varias veces, era inevitable encontrar algún tipo de conexiones entre ellos por lo que decidimos crear estas categorías para invitar a jugar con ellas, y, ¿por qué no?, a crear nuevas formas de agrupar los errores<br>"+
+    "<br>"+
+    "Les invitamos a descargar los fotogramas para que hagan sus propias animaciones. Las compartiremos en este sitio. Escríbannos a: cecihyde@moebiusanimacion.com"
 
   const divC = tag("div", seccion);
   divC.className = "submenu";
@@ -163,7 +166,7 @@ function crearFrame(divFI, n) {
   });
 
   const eye = tag("img", spanOjo);
-  eye.src = "./assets/eye.png";
+  eye.src = "./assets/eye.png?n=13";
 
   if (!esVideo) {
     const span = tag("span", divV);
@@ -174,7 +177,7 @@ function crearFrame(divFI, n) {
     a.href = nombreDescarga;
 
     const descargar = tag("img", a);
-    descargar.src = "./assets/descargar.png";
+    descargar.src = "./assets/descargar.png?n=13";
 
     const img = tag("img", divFI);
     img.src = nombre;
@@ -190,7 +193,7 @@ function crearFrame(divFI, n) {
     a.href = nombreDescarga;
 
     const descargar = tag("img", a);
-    descargar.src = "./assets/descargar.png";
+    descargar.src = "./assets/descargar.png?n=13";
 
     const img = tag("img", divFI);
     img.src = nombre;

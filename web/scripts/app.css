@@ -14,14 +14,37 @@ body {
   background-color: #303030;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #000000;
+  }
+}
+
 main {
   position: relative;
   background-color: #fffdfd;
   min-height: 100vh;
 }
 
+h1{
+  color: rgb(107, 107, 107);
+  margin-bottom:2%;
+}
+
+.menu-explicacion{
+
+}
+
+.menu-explicacion p {
+  font-size: 1.2rem;
+  color: #757575;
+  text-align: center;
+  padding: 3% 8%;
+  margin-bottom: 2%;
+}
+
 .submenu {
-  background-color: #f3f3f3;
+  background-color: #e1e1e1;
   border-bottom: 1px solid #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +66,7 @@ main {
 .submenu-titulo {
   color: rgb(107, 107, 107);
   font-size: 2rem;
-  padding: 2%;
+  padding: 2% 2% 0% 2%;
   text-align: center;
 }
 
@@ -51,6 +74,10 @@ main {
   .submenu {
     justify-content: center;
     padding: 3% 1%;
+  }
+
+  .submenu-titulo {
+    padding: 2% 2% 4% 2%;
   }
 
   .submenu span {
@@ -78,7 +105,7 @@ main {
   font-size: 1.2rem;
   color: #757575;
   text-align: center;
-  padding: 2% 8%;
+  padding: 1% 8%;
 }
 
 .frame-pc-fondo {

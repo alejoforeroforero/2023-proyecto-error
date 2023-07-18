@@ -5,37 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Error</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="index.css?n=1" />
+    <link rel="stylesheet" href="index.css?n=5" />
   </head>
   <body>
-    <video id="video-fondo" autoplay muted loop playsinline></video>
-    <h1>El tiempo del error <br>Error</h1>
+    <!-- <video id="video-fondo" autoplay muted loop playsinline></video>
+    <h1>El tiempo del error</h1>
     <div class="menu">
       <p>
         <a href="./experimental/" target="_blank">Experimentos</a>
       </p>
       <p>
-        <a href="./web/" target="_blank">Proyecto</a>
+        <a href="./web/" target="_blank">Resultados y procesos</a>
       </p>
-    </div>
+    </div> -->
   </body>
 
   <script>
     window.onload = () => {
-      escogerVideo();
+      window.location.replace("https://eltiempodelerror.moebiusanimacion.com/web/");
     };
 
-    function escogerVideo() {
-      let video = document.getElementById("video-fondo");
+    // function escogerVideo() {
+    //   let video = document.getElementById("video-fondo");
 
-      if (screen.width > 800) {
-        video.src = "prueba3.mp4?n=1";
-      }
+    //   if (screen.width > 800) {
+    //     video.src = "prueba3.mp4?n=1";
+    //   }
 
-      if (screen.width <= 800) {
-        video.src = "prueba2.mp4?n=1";
-      }
-      video.load();
-    }
+    //   if (screen.width <= 800) {
+    //     video.src = "prueba2.mp4?n=1";
+    //   }
+    //   video.load();
+    // }
   </script>
 </html>

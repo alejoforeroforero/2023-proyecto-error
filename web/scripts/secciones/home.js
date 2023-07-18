@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=7";
-import { bajarCss } from "../componentes/css.js?n=7";
-import { contenido } from "../classes/Contenido.js?n=7";
+import { tag } from "../componentes/tag.js?n=13";
+import { bajarCss } from "../componentes/css.js?n=13";
+import { contenido } from "../classes/Contenido.js?n=13";
 
 export function pintarHome() {
   const enlace = "./scripts/secciones/home.css";
@@ -14,7 +14,7 @@ function dibujarHome(){
     divF.className = "home-fondo";
 
     const img = tag("img", divF);
-    img.src = "./assets/home.jpg";
+    img.src = "./assets/home.jpg?n=13";
 
     const divC = tag("div", divF);
     divC.className = "home-hero";
@@ -24,7 +24,7 @@ function dibujarHome(){
 
     const p = tag("p", divCita);
     p.innerHTML = "Según la acepción más común errar consiste en ir de un lado a otro y dejar que sea el azar quien guíe nuestros pasos. Pero errar también significa arriesgarse a cometer errores. Errar es la forma en que vagabundea la serendipidad.<br>"+
-    "Clément Chéroux, (Breve historia del error fotográfico, Serieve, 2009, México. Pg.135"
+    "<br>Clément Chéroux, <br>(Breve historia del error fotográfico, Serieve, 2009, México. Pg.135)"
 
     const divP = tag("div", divC);
     divP.className = "home-parrafo";    

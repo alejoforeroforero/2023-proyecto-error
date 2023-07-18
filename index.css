@@ -1,65 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 12px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  font-size: 12px;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-video{
-    width: 100%;
-    filter: opacity(0.6);
-    position: absolute;
-    z-index: 1;
-    left: 0px;
-    top:0px;
+video {
+  width: 100%;
+  filter: opacity(0.6);
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
 }
 
-h1{
+h1 {
+  z-index: 2;
+  color: #fa9c6d;
+  margin-top: 25vh;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 6rem;
+  letter-spacing: 0.8rem;
+}
+
+.menu {
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content:space-around;
+  padding: 35vh 0 0 0;
+}
+
+.menu p {
+  z-index: 3;
+  width: 50%;
+  margin: 0px 7%;
+  text-align: right;
+}
+
+.menu p:nth-child(1) {
+  text-align: left;
+}
+
+.menu a {
+  z-index: 3;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(249, 249, 249);
+  text-decoration: none;
+  background-color: #2f4450;
+  padding: 4px 13px;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  color: rgb(249, 119, 112);
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 20vh;
+  }
+
+  .menu {
     z-index: 2;
-    color:rgb(131, 137, 200);
-    margin-top: 25vh;
-    text-align: center;
-    font-size: 6rem; 
-    line-height: 4rem;
-    letter-spacing: 1rem; 
-    font-family: 'Albert Sans', sans-serif;
-}
-
-.menu{
-    z-index: 2;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     display: flex;
-    justify-content:center;
-    padding: 18vh;
-}
+    justify-content: space-between;
+    padding: 10vh 0 0 0;
+    flex-wrap: wrap;
+  }
 
-.menu p{
+  .menu p {
     z-index: 3;
-    width: 50%;
-    margin: 0px 4%;
+    width: 100%;
+    margin: 14px 0%;
     text-align: center;
-}
+  }
 
-/* .menu p:first-child{
-    text-align: right;
-} */
+  .menu p:nth-child(1) {
+    text-align: center;
+  }
 
-.menu a{
+  .menu a {
     z-index: 3;
-    font-size: 4rem;
-    cursor:pointer;
-    color:rgb(255, 231, 200);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(255, 231, 200);
     text-decoration: none;
-}
-
-.menu a:hover{
-    color:rgb(249, 119, 112);
+    background-color: #fa9c6d;
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
 }

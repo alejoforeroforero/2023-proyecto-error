@@ -1,0 +1,49 @@
+.maquina{
+    padding-bottom: 10%;
+}
+
+.maquina-modulo{
+    margin-top: 0%;
+}
+
+.maquina-modulo>h1{
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-size: 1.6rem;
+    padding: 0%;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.maquina-modulo>div{
+    position: relative;
+    text-align: center
+}
+
+.maquina-modulo>div>img:nth-child(1){
+    border-radius: 12px;
+    width: 60%;
+}
+
+.maquina-modulo>div>img:nth-child(2){
+    position: absolute;
+    width: 5%;
+    left: 47.5%;
+    top:45%;
+    background-color: rgba(241, 240, 240, 0.4);
+    border-radius: 14px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .maquina-modulo>div>img:nth-child(1){
+        width: 100%;
+    }
+
+    .maquina-modulo>div>img:nth-child(2){
+        position: absolute;
+        width: 10%;
+        left: 45%;
+    }
+}

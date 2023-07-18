@@ -26,7 +26,7 @@ export class Cuadrado {
     this.contenedor.className = "cuadrado";
 
     this.img = cE("img", this.contenedor);
-    this.img.src = `../assets/imgs/home/${this.imgId}.jpg`;
+    this.img.src = `../assets/imgs/home/${this.imgId}.jpg?n=13`;
     this.img.className = "img";
     this.img.style.width = `${this.imgWidth}%`
     this.img.addEventListener("click", ()=> thisObj.handlerOnClick());

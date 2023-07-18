@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=7";
-import { bajarCss } from "../componentes/css.js?n=7";
-import { contenido } from "../classes/Contenido.js?n=7";
+import { tag } from "../componentes/tag.js?n=13";
+import { bajarCss } from "../componentes/css.js?n=13";
+import { contenido } from "../classes/Contenido.js?n=13";
 
 export function pintarCreditos() {
   const enlace = "./scripts/secciones/creditos.css";
@@ -13,7 +13,7 @@ function dibujarCreditos() {
   const seccion = tag("section", contenido.main);
 
   const divE = tag("div", seccion);
-  divE.className = "submenu-explicacion";
+  divE.className = "menu-explicacion";
 
   const p = tag("p", divE);
   p.innerHTML = "El tiempo del error es un proyecto apoyado por: <br>"+
@@ -44,7 +44,7 @@ function pintarSubmenu(padre, padreContenido) {
     },
     {
       id: "animaciones",
-      titulo: "Animación e intervenciones:",
+      titulo: "Animación e intervenciones",
     },
     // {
     //   id: "errorospcopio",

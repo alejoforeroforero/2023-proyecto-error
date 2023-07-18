@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=7";
-import { bajarCss } from "../componentes/css.js?n=7";
-import { contenido } from "../classes/Contenido.js?n=7";
+import { tag } from "../componentes/tag.js?n=13";
+import { bajarCss } from "../componentes/css.js?n=13";
+import { contenido } from "../classes/Contenido.js?n=13";
 
 export function pintarPelicula() {
   const enlace = "./scripts/secciones/pelicula.css";
@@ -30,5 +30,5 @@ function dibujarPelicula() {
 
   const video = tag("video", seccionV);
   video.controls = true;
-  video.src = '../assets/entrevistas/pelicula.mp4';
+  video.src = '../assets/pelicula/teaser.mp4';
 }
