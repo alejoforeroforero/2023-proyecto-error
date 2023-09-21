@@ -1,7 +1,7 @@
-import { tag } from "../componentes/tag.js?n=13";
-import { bajarCss } from "../componentes/css.js?n=13";
-import { contenido } from "../classes/Contenido.js?n=13";
-import { Frame } from "../classes/Frame.js?n=13";
+import { tag } from "../componentes/tag.js?n=14";
+import { bajarCss } from "../componentes/css.js?n=14";
+import { contenido } from "../classes/Contenido.js?n=14";
+import { Frame } from "../classes/Frame.js?n=14";
 
 export function pintarReflexiones() {
   const enlace = "./scripts/secciones/reflexiones.css";
@@ -89,7 +89,7 @@ function pintarEntrevistas(padre) {
     {
       id: "enrico",
       titulo: "Enrico Mandirola",
-      img: "../assets/entrevistas/enrico.jpg?n=13",
+      img: "../assets/entrevistas/enrico.jpg?n=14",
       video: "../assets/entrevistas/enrico.mp4",
       info: "Cineasta y artista visual italiano instalado en Bogotá desde el año 2007. Desde el 2012 es profesor de cine y fotografía en la Tecnología en Realización Audiovisual de la Facultad de Ciencias de la Comunicación de la Universidad Minuto de Dios. Desde el 2015 es profesor de cátedra en la Maestría de Creación Audiovisual y el pregrado de Artes de la Facultad de Artes de la Pontificia Universidad Javeriana. Es miembro del laboratorio colectivo de artistas-cineastas “L’Abominable” (http://www.l-abominable.org) de Paris, espacio donde inició su trabajo artístico como experimentador audiovisual entre el año 2001 y 2006. Fundó en 2007 el laboratorio de cine artesanal KinoLab-Colombia (www.kinolabcolombia.blogspot.com), espacio dedicado a la creación y recuperación de la memoria colectiva en los formatos de cine Súper-8 y 16mm.",
       temas:
@@ -98,7 +98,7 @@ function pintarEntrevistas(padre) {
     {
       id: "olga",
       titulo: "Juan David Cárdenas",
-      img: "../assets/entrevistas/juandavid.jpg?n=13",
+      img: "../assets/entrevistas/juandavid.jpg?n=14",
       video: "../assets/entrevistas/juandavid.mp4",
       info: "Realizador de cine y TV y filósofo. Se dedica a la escritura de guion de ficción, a la dirección de cine argumental, a la realización híbrida entre documental y ficción, y a la teoría de los medios técnicos tales como la fotografía, el cine y los medios digitales. Sus intereses creativos tienen que ver por la relación entre imagen, técnica y política en el contexto de la modernidad",
       temas:
@@ -107,7 +107,7 @@ function pintarEntrevistas(padre) {
     {
       id: "olga",
       titulo: "Olga Lucía Ospina",
-      img: "../assets/entrevistas/olga.jpg?n=13",
+      img: "../assets/entrevistas/olga.jpg?n=14",
       video: "../assets/entrevistas/olga.mp4",
       info: "Profesora de física, licenciada en física y Magister en Ciencias Biológicas de la Pontificia Universidad Javeriana. Hizo sus estudios de doctorado en Biofísica en la Universidad Complutense de Madrid. Montó un laboratorio de estudio de propiedades mecánicas de películas interfaciales. Su pasión es la enseñanza de la física, compartir con sus estudiantes para poner en marcha la unión entre la creatividad y el aprendizaje, acogiendo siempre el error",
       temas:
@@ -116,7 +116,7 @@ function pintarEntrevistas(padre) {
     {
       id: "botero",
       titulo: "Santiago Botero",
-      img: "../assets/entrevistas/botero.jpg?n=13",
+      img: "../assets/entrevistas/botero.jpg?n=14",
       video: "../assets/entrevistas/botero.mp4",
       info: "Contra(bajista), improvisador, compositor y pedagogo.  Realizó sus estudios en contrabajo jazz y clásico en el Conservatorio de Amsterdam (Países Bajos) y maestría en estudios de Improvisación Libre en el Conservatorio de Arnhem (Países Bajos). Es profesor de contrabajo y ensambles en la Facultad de Artes de la Pontificia Universidad Javeriana (Bogotá, Colombia). Director musical de diferentes iniciativas que orbitan en el mundo de la improvisación libre, la música experimental, el punk y la cumbia como MULA, El Ombligo, Los Toscos, BoteroDelgado Dúo y Pérez Trío.",
       temas:
@@ -125,7 +125,7 @@ function pintarEntrevistas(padre) {
     {
       id: "arias",
       titulo: "Juan Carlos Arias",
-      img: "../assets/entrevistas/juancarlos.jpg?n=13",
+      img: "../assets/entrevistas/juancarlos.jpg?n=14",
       video: "../assets/entrevistas/juancarlos.mp4",
       info: "Investigador y realizador audiovisual. PhD en Historia del Arte de la University of Illinois at Chicago. Su interés gira alrededor de la relación entre imagen y violencia, particularmente en el arte latinoamericano y en la producción documental.",
       temas:
@@ -134,21 +134,29 @@ function pintarEntrevistas(padre) {
     {
       id: "equipo",
       titulo: "Equipo",
-      img: "../assets/entrevistas/equipo.jpg?n=13",
+      img: "../assets/entrevistas/equipo.jpg?n=14",
       video: "../assets/entrevistas/equipo.mp4",
       info: "",
       temas:
         "Obsesión por la perfección. Noción de autor. Trabajo colectivo. Apropiación. Redirigir la mirada. Intención.",
     },
-    // {
-    //   id: "ordone",
-    //   titulo: "Santiago Ordóñez - From the future to the past",
-    //   img: "../assets/entrevistas/olga.jpg",
-    //   video: "../assets/entrevistas/olga.mp4",
-    //   info: "En esta animación Santiago Ordóñez, en quien se inspira este proyecto, reflexiona sobre la creación de tiempos y el error en animación",
-    //   temas:
-    //     "Artista visual y animador. Actualmente realiza una maestría en animación en Estonian Academy of Arts",
-    // },
+    {
+      id: "ordone",
+      titulo: "Santiago Ordóñez - From the future to the past",
+      img: "../assets/entrevistas/santiago.jpg",
+      video: "../assets/entrevistas/santiago.mp4",
+      info: "En esta animación Santiago Ordóñez, en quien se inspira este proyecto, reflexiona sobre la creación de tiempos y el error en animación",
+      temas:
+        "Artista visual y animador. Actualmente realiza una maestría en animación en Estonian Academy of Arts",
+    },
+    {
+      id: "lorenzo",
+      titulo: "María Lorenzo Hernández",
+      img: "../assets/entrevistas/maria.jpg",
+      video: "../assets/entrevistas/maria.mp4",
+      info: "",
+      temas:"",
+    },
   ];
 
   entrevistas.map((entrevista) => {
@@ -160,7 +168,7 @@ function pintarEntrevistas(padre) {
     img.src = entrevista.img;
 
     const imgE = tag("img", divImgs);
-    imgE.src = "./assets/eye.png?n=13";
+    imgE.src = "./assets/eye.png?n=14";
     imgE.addEventListener("click", () => {
       const frameObj = new Frame();
       frameObj.controles = true;

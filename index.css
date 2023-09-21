@@ -10,6 +10,7 @@
 
 body {
   background-color: black;
+  text-align: center;
 }
 
 video {
@@ -21,17 +22,42 @@ video {
   top: 0px;
 }
 
-h1 {
+div{
+  position: absolute;
+  left: 0px;
+  top:0px;
   z-index: 2;
-  color: #fa9c6d;
-  margin-top: 25vh;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #fdfdfd;
   text-align: center;
   font-size: 5rem;
   line-height: 6rem;
   letter-spacing: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.menu {
+a:hover{
+  color: #fa9c6d;
+}
+
+p{
+  width: 50%;
+  margin-left: 25%;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-top: 40px;
+  text-align: right;
+}
+
+/* .menu {
   z-index: 2;
   color: rgb(255, 255, 255);
   display: flex;
@@ -63,7 +89,7 @@ h1 {
 
 .menu a:hover {
   color: rgb(249, 119, 112);
-}
+} */
 
 @media only screen and (max-width: 800px) {
   h1 {

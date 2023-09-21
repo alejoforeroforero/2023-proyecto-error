@@ -1,6 +1,6 @@
-import { tag } from "../componentes/tag.js?n=13";
-import { bajarCss } from "../componentes/css.js?n=13";
-import { contenido } from "../classes/Contenido.js?n=13";
+import { tag } from "../componentes/tag.js?n=14";
+import { bajarCss } from "../componentes/css.js?n=14";
+import { contenido } from "../classes/Contenido.js?n=14";
 
 export function pintarHome() {
   const enlace = "./scripts/secciones/home.css";
@@ -14,25 +14,21 @@ function dibujarHome(){
     divF.className = "home-fondo";
 
     const img = tag("img", divF);
-    img.src = "./assets/home.jpg?n=13";
+    img.src = "./assets/home.jpg?n=14";
 
     const divC = tag("div", divF);
     divC.className = "home-hero";
-
-    const divCita = tag("div", divC);
-    divCita.className = "home-cita";
-
-    const p = tag("p", divCita);
-    p.innerHTML = "Según la acepción más común errar consiste en ir de un lado a otro y dejar que sea el azar quien guíe nuestros pasos. Pero errar también significa arriesgarse a cometer errores. Errar es la forma en que vagabundea la serendipidad.<br>"+
-    "<br>Clément Chéroux, <br>(Breve historia del error fotográfico, Serieve, 2009, México. Pg.135)"
 
     const divP = tag("div", divC);
     divP.className = "home-parrafo";    
 
     const p2 = tag("p", divP);
-    p2.innerHTML = "El Tiempo del error, es el resultado de una serie de ejercicios audiovisuales que exploran la composición del tiempo en la animación a partir de imágenes que han sido rechazadas como errores en otros procesos de creación.<br>"+
-    "Se conformó un archivo de fotogramas donados por distintos animadores y animadoras que se convirtieron en la materia prima de experimentación colectiva alrededor de las posibilidades que se abren al trabajar desde y con el error."
-    
+    p2.innerHTML = "El Tiempo del error es un proyecto de investigación- creación que explora la composición del tiempo audiovisual haciendo énfasis en la animación mediante el uso de fotogramas rechazados como errores en otros procesos creativos, donados por diferentes animadores y animadoras. <br><br>"+
+    "Dichas imágenes se constituyeron en la materia prima de una experimentación colectiva teniendo como eje la imagen-tiempo, así como las potencias creativas contenidas en dichos fotogramas descartados, cruzados por la pregunta sobre lo que implica comprender la creación audiovisual desde el error como lugar de exploración<br><br>"+
+    "De este proyecto se desprendieron tres obras: Este sitio web que actúa tanto como repositorio de los procesos, así como el lugar en el que muestran los resultados de creación colectiva a partir de los errores-fotogramas donados. Es también una invitación a los usuarios del sitio a crear con los errores que encontrarán para ser descargados.<br><br>"+
+    "Otro de los resultados fue una película de carácter ensayístico que explora, a través de la ficción, las potencias y fantasmas que acompañan a toda imagen-tiempo. Aquí encontrarán el Trailer. Por último, se creó El erroroscopio. Máquina para ver errores, siendo este último resultado el que condensa de manera más potente nuestra investigación y reflexiones sobre el error en la creación en el terreno audiovisual específicamente en la animación.<br><br>"+
+    "Bienvenidos y disfruten. "
+
     const p3 = tag("p", divP);
     p3.innerHTML = "Apoyado por: <br>"+    
     "Vicerrectoría de investigación <br>"+

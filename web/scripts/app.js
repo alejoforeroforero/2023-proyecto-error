@@ -1,14 +1,14 @@
-import { header } from "./classes/Header.js?n=13";
-import { menu } from "./classes/Menu.js?n=13";
-import { contenido } from "./classes/Contenido.js?n=13";
-import { tag } from "./componentes/tag.js?n=13";
-import { pintarHome } from "./secciones/home.js?n=13";
-import { pintarFrames } from "./secciones/frames.js?n=13";
-import { pintarReflexiones } from "./secciones/reflexiones.js?n=13";
-import { pintarTalleres } from "./secciones/talleres.js?n=13";
-import { pintarMaquina } from "./secciones/maquina.js?n=13";
-import { pintarPelicula } from "./secciones/pelicula.js?n=13";
-import { pintarCreditos } from "./secciones/creditos.js?n=13";
+import { header } from "./classes/Header.js?n=14";
+import { menu } from "./classes/Menu.js?n=14";
+import { contenido } from "./classes/Contenido.js?n=14";
+import { tag } from "./componentes/tag.js?n=14";
+import { pintarHome } from "./secciones/home.js?n=14";
+import { pintarFrames } from "./secciones/frames.js?n=14";
+import { pintarReflexiones } from "./secciones/reflexiones.js?n=14";
+import { pintarTalleres } from "./secciones/talleres.js?n=14";
+import { pintarMaquina } from "./secciones/maquina.js?n=14";
+import { pintarPelicula } from "./secciones/pelicula.js?n=14";
+import { pintarCreditos } from "./secciones/creditos.js?n=14";
 
 empezar();
 

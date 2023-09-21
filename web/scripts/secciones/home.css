@@ -4,12 +4,13 @@
 }
 
 .home-fondo > img {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  filter: opacity(0.8);
-  z-index: 1;
+  width: 100%;  /*width of parent container*/
+  height: 100%; /*height of parent container*/
+  object-fit:cover;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: sepia(60%) brightness(60%);
 }
 
 .home-hero {
@@ -20,6 +21,7 @@
   top: 0px;
   z-index: 2;
   text-align: center;
+  overflow: scroll;
 }
 
 .home-hero > div {
@@ -50,7 +52,7 @@
 .home-parrafo p:nth-child(2) {
   width: 100% !important;
   margin: 10% 0% !important;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 

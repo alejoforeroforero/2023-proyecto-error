@@ -1,14 +1,15 @@
-import { tag } from "../componentes/tag.js?n=13";
-import { bajarCss } from "../componentes/css.js?n=13";
-import { contenido } from "../classes/Contenido.js?n=13";
-import { Frame } from "../classes/Frame.js?n=13";
+import { tag } from "../componentes/tag.js?n=14";
+import { bajarCss } from "../componentes/css.js?n=14";
+import { contenido } from "../classes/Contenido.js?n=14";
+import { Frame } from "../classes/Frame.js?n=14";
 
 const reflexiones = [
   {
     id: "cine-toro",
     titulo: "Cine Toro",
-    imgProceso: "../assets/talleres/toro-proceso.jpg?n=13",
-    imgResultado: "../assets/talleres/toro-resultado.jpg?n=13",
+    fecha: "25 y 26 de noviembre de 2022",
+    imgProceso: "../assets/talleres/toro-proceso.jpg?n=14",
+    imgResultado: "../assets/talleres/toro-resultado.jpg?n=14",
     proceso: "../assets/talleres/toro-proceso.mp4",
     resultado: "../assets/talleres/toro-resultado.mp4",
     desc: "Este taller se realizó durante el Festival de Cine Experimental de Toro, Valle, en el que participaron estudiantes e interesad s en la animación.",
@@ -16,8 +17,9 @@ const reflexiones = [
   {
     id: "javeriana",
     titulo: "Universidad Javeriana",
-    imgProceso: "../assets/talleres/puj-proceso.jpg?n=13",
-    imgResultado: "../assets/talleres/puj-resultado.jpg?n=13",
+    fecha: "29 de septiembre de 2022",
+    imgProceso: "../assets/talleres/puj-proceso.jpg?n=14",
+    imgResultado: "../assets/talleres/puj-resultado.jpg?n=14",
     proceso: "../assets/talleres/puj-proceso.mp4",
     resultado: "../assets/talleres/puj-resultado.mp4",
     desc: "Este taller se realizó en el marco de la Semana 9, evento de la Carrera de Artes Visuales en la Pontificia Universidad Javeriana.",
@@ -25,8 +27,9 @@ const reflexiones = [
   {
     id: "choachi",
     titulo: "Choachi",
+    fecha: "14 de octubre de 2022",
     imgProceso: null,
-    imgResultado: "../assets/talleres/choachi-resultado.jpg?n=13",
+    imgResultado: "../assets/talleres/choachi-resultado.jpg?n=14",
     proceso: null,
     resultado: "../assets/talleres/choachi-resultado.mp4",
     desc: "Este taller fue un encuentro entre los miembros del equipo y algunos invitados. Nos reunimos a hacer nuestras propias versiones con los errores.",
@@ -77,6 +80,10 @@ function pintarTalleresContenido(padre, submenu) {
   divT.className = "submenu-titulo";
   divT.innerHTML = submenu ? submenu.titulo : "Cine Toro";
 
+  const divF = tag("div", padre);
+  divF.className = "fecha";
+  divF.innerHTML = submenu.fecha;
+
   const divP = tag("div", padre);
   divP.className = "submenu-explicacion";
 
@@ -108,7 +115,7 @@ function pintarProceso(seccion, submenu) {
   img.src = submenu.imgProceso;
 
   const imgE = tag("img", divPImg);
-  imgE.src = "./assets/eye.png?n=13";
+  imgE.src = "./assets/eye.png?n=14";
   imgE.addEventListener("click", () => {
     const frameObj = new Frame();
     frameObj.controles = true;
@@ -129,7 +136,7 @@ function pintarResultado(seccion, submenu) {
   img.src = submenu.imgResultado;
 
   const imgE = tag("img", divPImg);
-  imgE.src = "./assets/eye.png?n=13";
+  imgE.src = "./assets/eye.png?n=14";
   imgE.addEventListener("click", () => {
     const frameObj = new Frame();
     frameObj.controles = true;
